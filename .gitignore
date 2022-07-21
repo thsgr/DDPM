@@ -1,0 +1,8 @@
+.vscode/
+*.pyc
+*.wav
+*.ckpt
+.DS_Store
+*.swp
+__pycache__/
+frechet_audio_distance/stats/*
