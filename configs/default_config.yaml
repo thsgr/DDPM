@@ -1,0 +1,49 @@
+
+dataset: "DataSetName"
+
+# === Dataloader ===
+train_paths: null
+val_paths: null
+test_paths: null
+audio_length: 44000
+# === Data Processor ===
+dataprocessor_type": 'mu-law' # mu-law | null
+
+# === SDE === 
+sde": "ddpm"
+sampler_name: "EM"
+# ==== Generation params ======
+
+num_steps: 500
+generate_num_samples: 21000
+striding: "quadratic"
+input_audio: null # For conditioning purposes
+output_audio: "output/generated_samples/"
+generate_batch_size: 10
+fs: 16000
+guidance: 1.0
+# ==== Model =====
+diffusion_model_type: "u-net"
+
+# ======== Training ========
+lr: 1e-4
+batch_size: 10
+num_batches: 250
+num_epochs: 20000
+ema_rate: 0.999
+load_ema: true
+n_bins: 10
+num_epochs_between_savings: 50
+num_workers: 0
+train_16_bits: false
+num_models_to_save: null
+likelihood_training: false
+
+# ======== model ID ========
+timestamp: null
+savename: 'default_config'
+# ==== FAD ====
+fad_dir_path: 'frechet_audio_distance/'
+compute_fad: false
+stats: null
+input_files: null
