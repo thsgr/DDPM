@@ -1,7 +1,6 @@
-import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from modules import GammaBeta, RFFBlock, DBlock, UBlock, Conv1d
+from .modules import GammaBeta, RFFBlock, DBlock, UBlock, Conv1d
 
 
 class UNet(nn.Module):

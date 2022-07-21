@@ -35,7 +35,7 @@ load_ema: true
 n_bins: 10
 num_epochs_between_savings: 50
 num_workers: 0
-train_16_bits: false
+16_bits_train: false
 num_models_to_save: null
 likelihood_training: false
 
