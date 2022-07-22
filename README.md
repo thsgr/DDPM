@@ -43,7 +43,7 @@ $ python main.py -t -l
 $ python main.py -l --num_steps=300 --lr=0.0001
 ```
 
-### List of variables that can be overiden
+### List of variables that can written over
 
 | Params      |  |       |   |
 | :---        |    :----:   |    :----:     |  ---: |
@@ -55,11 +55,6 @@ $ python main.py -l --num_steps=300 --lr=0.0001
 | ```--load_ema``` | ```--compute_fad``` | ```--input_files``` | ```--stats```|
 
 # FAD
-
-| Syntax      | Description | Test Text     |Here's this   |
-| :---        |    :----:   |    :----:     |  ---: |
-| Header      | Title       | Here's this   | Here's this   |
-| Paragraph   | Text        | And more      | Here's this   | 
 
 This repository provides supporting code used to compute the Fréchet Audio Distance (FAD), a reference-free evaluation metric for audio generation algorithms, in particular music enhancement.
 
